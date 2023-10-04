@@ -1,5 +1,8 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { UserButton } from '@clerk/nextjs';
+import { Separator } from '@radix-ui/react-separator';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
@@ -26,6 +29,13 @@ const DashboardPage = (props: Props) => {
                      <UserButton />
                  </div>
              </div>
+
+              <div className="h-8"></div>
+               <Separator />
+               <div className="h-8"></div>
+            <div className="text-center">
+                <h2 className="text-xl text-grey-500"> You have no notes yet. </h2>
+            </div>
           </div>
          </div> 
         </>
